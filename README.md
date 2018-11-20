@@ -9,7 +9,7 @@
 ---
 > 下图中上面是excel数据，下面是word文档的占位
 
-![Alttext](src\main\resources\1.first.jpg)
+![Alttext](https://raw.githubusercontent.com/flowclouds/textfactory/master/src/main/resources/1.first.jpg)
 
 
 启动：
