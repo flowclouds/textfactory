@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Accordion?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.ColumnConstraints?>
+<?import javafx.scene.layout.GridPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.RowConstraints?>
+<?import javafx.scene.text.Font?>
+
+<GridPane alignment="center" hgap="10.0" prefHeight="398.0" prefWidth="500.0" vgap="5.0" xmlns="http://javafx.com/javafx/8.0.172-ea" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sample.Controller">
+    <columnConstraints>
+        <ColumnConstraints maxWidth="116.0" minWidth="69.0" prefWidth="116.0" />
+        <ColumnConstraints maxWidth="350.0" minWidth="310.0" prefWidth="310.0" />
+    </columnConstraints>
+    <rowConstraints>
+        <RowConstraints />
+        <RowConstraints />
+        <RowConstraints />
+        <RowConstraints />
+        <RowConstraints />
+        <RowConstraints />
+        <RowConstraints />
+        <RowConstraints />
+      <RowConstraints maxHeight="34.0" minHeight="21.0" prefHeight="21.0" />
+      <RowConstraints maxHeight="35.0" minHeight="30.0" prefHeight="40.0" />
+      <RowConstraints />
+      <RowConstraints />
+    </rowConstraints>
+    <children>
+        <Button mnemonicParsing="false" onAction="#onButtonClick" prefHeight="23.0" prefWidth="118.0" text="选择EXCEL文件" GridPane.rowIndex="2" />
+        <TextField fx:id="mTextField" prefHeight="23.0" prefWidth="359.0" GridPane.columnIndex="1" GridPane.rowIndex="2" />
+        <Button mnemonicParsing="false" onAction="#onRunButtonClick" prefHeight="23.0" prefWidth="118.0" text=" 执行" GridPane.rowIndex="6" />
+        <Label alignment="CENTER" contentDisplay="CENTER" prefHeight="27.0" prefWidth="111.0" text="文件名列" textAlignment="JUSTIFY" wrapText="true" GridPane.rowIndex="1" />
+        <TextField fx:id="cloum" promptText="请输入文件命名的列，如“A”、“AA”" GridPane.columnIndex="1" GridPane.rowIndex="1" />
+      <Button mnemonicParsing="false" onAction="#onButtonClickgGetFilePath" prefHeight="23.0" prefWidth="120.0" text="生成结果位置" GridPane.rowIndex="3" />
+      <TextField fx:id="fileResutlPath" GridPane.columnIndex="1" GridPane.rowIndex="3" />
+      <Button mnemonicParsing="false" onAction="#onGetTempFolderPath" prefHeight="23.0" prefWidth="122.0" text="模板位置" GridPane.rowIndex="4" />
+      <TextField fx:id="tempFolderPath" GridPane.columnIndex="1" GridPane.rowIndex="4" />
+      <Label alignment="CENTER" contentDisplay="CENTER" prefHeight="15.0" prefWidth="114.0" text="\@流行的云" textAlignment="CENTER" GridPane.rowIndex="8" />
+<!--      <HBox prefHeight="125.0" prefWidth="307.0" GridPane.columnIndex="1" GridPane.rowIndex="11">
+         <children>
+            <ImageView fitHeight="151.0" fitWidth="160.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@/alipaycode.jpg" />
+               </image>
+            </ImageView>
+            <ImageView fitHeight="181.0" fitWidth="151.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@/wechartqrcode.jpg" />
+               </image>
+            </ImageView>
+         </children>
+      </HBox>
+      <HBox prefHeight="49.0" prefWidth="154.0" GridPane.columnIndex="1" GridPane.rowIndex="9" GridPane.valignment="CENTER">
+         <children>
+            <Label alignment="CENTER" prefHeight="0.0" prefWidth="150.0" text=" 支付宝" textAlignment="JUSTIFY">
+               <font>
+                  <Font size="25.0" />
+               </font></Label>
+            <Label alignment="CENTER" contentDisplay="CENTER" prefHeight="0.0" prefWidth="150.0" text="微信" textAlignment="CENTER" HBox.hgrow="SOMETIMES">
+               <font>
+                  <Font size="25.0" />
+               </font></Label>
+         </children>
+      </HBox>-->
+      <Accordion GridPane.rowIndex="11" />
+      <Button mnemonicParsing="false" onAction="#onHelpbtn" prefHeight="41.0" prefWidth="116.0" text="帮助" GridPane.rowIndex="9" />
+      <Label prefHeight="57.0" prefWidth="310.0" text="liangjianqqmm@qq.com" GridPane.columnIndex="1" GridPane.rowIndex="8" />
+    </children>
+</GridPane>
